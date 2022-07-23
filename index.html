@@ -1,0 +1,399 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A Basic HTML5 Template</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <style>
+        .et_pb_slider,
+        .et_pb_slider .et_pb_container {
+            height: 60vh !important;
+        }
+
+        .et_pb_slider,
+        .et_pb_slider .et_pb_slide {
+            max-height: 60vh;
+        }
+
+        /********* Wheel Graphic *************************/
+        #main-footer,
+        #row-spacer {
+            margin-top: 900px;
+        }
+
+        div {
+            padding: 3px;
+        }
+
+        .c-container {
+            display: block;
+            width: 100%;
+        }
+
+        .circle-container .circle-inner {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            border-radius: 0;
+            background-color: #3408fa;
+            width: 65px;
+            height: 860px;
+        }
+
+        .circle-container .center {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            display: none;
+        }
+
+        .circle-container .center img {
+            width: 95%;
+            max-width: 400px;
+        }
+
+        .circle-container .logo-area {
+            position: absolute;
+            left: -20px;
+            margin-right: -20px;
+        }
+
+        .circle-logo {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        #wheel .icon {
+            display: block;
+            float: left;
+            width: 75px;
+            height: 75px;
+            border: solid 1px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        #wheel .icon img {
+            width: 75px;
+        }
+
+        .circle-container .center-name {
+            display: block;
+            /* float:left; */
+            padding: 10px 0 0 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            width: 70%;
+            text-align: left;
+        }
+
+        .circle-container .center-name:hover {
+            color: #716C6B;
+        }
+
+        /******   New Wheel ******/
+        .deg100 {
+            transform: none;
+        }
+
+        .deg614 {
+            transform: none;
+        }
+
+        .deg1128 {
+            transform: none;
+        }
+
+        .deg1642 {
+            transform: none;
+        }
+
+        .deg2156 {
+            transform: none;
+        }
+
+        .deg2670 {
+            transform: none;
+        }
+
+        .deg3184 {
+            transform: none;
+        }
+
+
+        #wheel .icon:hover {
+            background-color: #716C6B;
+        }
+
+        /**************************************/
+
+        /*******************Wheel media query**********************************/
+
+        @media only screen and (min-width: 981px) {
+
+            #row-spacer {
+                margin-top: 900px;
+            }
+
+            .c-container {
+                margin-top: 70px;
+                margin-bottom: 100px;
+            }
+
+            .circle-container {
+                position: relative;
+                width: 30em;
+                height: 30em;
+                /* padding: 2.8em; = 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2)) */
+                border-radius: 50%;
+                margin: 1.75em auto 0;
+                background-color: #3408fa;
+                /* For browsers that do not support gradients */
+                background-image: radial-gradient(#88a3e8e3, #88a3e8e3, #3408fa);
+            }
+
+            .circle-container .circle-inner {
+                position: absolute;
+                top: 6.2em;
+                left: 6.2em;
+                border-radius: 50%;
+                width: 18em;
+                height: 18em;
+                background-color: white;
+            }
+
+            .circle-container .center {
+                display: block;
+                position: absolute;
+                top: 12em;
+                left: 23%;
+            }
+
+            .circle-container .center img {
+                max-width: 250px;
+            }
+
+            .circle-container .logo-area {
+                top: 12em;
+                left: 12em;
+            }
+
+            .circle-container .circle-logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 300px;
+            }
+
+            /* .circle-container .center-name{
+    padding: 35px 0 0 10px;
+    width:100%;
+    } */
+
+            /* New Wheel */
+            .logo-area .deg1642 .center-name,
+            .logo-area .deg2156 .center-name {
+                top: 20px;
+                position: absolute;
+                right: 270px;
+                width: 190px;
+                padding: 0;
+            }
+
+            .logo-area .deg614 .center-name {
+                position: absolute;
+                top: 15px;
+                left: 100px;
+                width: 200px;
+                padding: 0;
+            }
+
+            .logo-area .deg1128 .center-name {
+                top: 20px;
+                position: absolute;
+                right: 225px;
+                width: 200px;
+                padding: 0;
+            }
+
+            .logo-area .deg2670 .center-name {
+                top: 60px;
+                position: absolute;
+                left: 95px;
+                width: 200px;
+                padding: 0;
+            }
+
+            .logo-area .deg3184 .center-name {
+                top: 20px;
+                position: absolute;
+                left: 105px;
+                width: 200px;
+                padding: 0;
+            }
+
+            .logo-area .deg100 .center-name {
+                top: 10px;
+                left: 50px;
+                position: absolute;
+                width: 250px;
+                text-align: center;
+            }
+
+            /* End New Wheel */
+
+            .circle-container img {
+                display: block;
+                width: 100%;
+            }
+
+
+            /****  New Wheel   ****/
+            .deg100 {
+                transform: rotate(-10deg) translate(15em) rotate(10deg);
+            }
+
+            /* 12em = half the width of the wrapper */
+            .deg614 {
+                transform: rotate(-61deg) translate(15em) rotate(61deg);
+            }
+
+            .deg1128 {
+                transform: rotate(-113deg) translate(15em) rotate(113deg);
+            }
+
+            .deg1642 {
+                transform: rotate(-164deg) translate(15em) rotate(164deg);
+            }
+
+            .deg2156 {
+                transform: rotate(-216deg) translate(15em) rotate(216deg);
+            }
+
+            .deg2670 {
+                transform: rotate(-267deg) translate(15em) rotate(267deg);
+            }
+
+            .deg3184 {
+                transform: rotate(-318deg) translate(15em) rotate(318deg);
+            }
+
+
+            .circle-container a:hover:before {
+                opacity: 1;
+            }
+
+            .circle-container:hover a:after {
+                opacity: 0;
+            }
+
+            .circle-container a:hover:after {
+                opacity: .8;
+            }
+
+        }
+
+        #main-footer {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .et_pb_main_blurb_image {
+            margin-bottom: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wheel">
+        <div class="c-container">
+            <div class='circle-container'>
+                <div class="circle-inner"></div>
+
+                <div class="center">
+                    <a href='https://www.yahoo.com/'><img src='./images/logo_filler.png'></a>
+                </div>
+
+                <div class="logo-area">
+                    <div>
+
+                        <div class="circle-logo deg100">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+
+                        <div class="circle-logo deg614">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+                        <div class="circle-logo deg1128">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+                        <div class="circle-logo deg1642">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+                        <div class="circle-logo deg2156">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+                        <div class="circle-logo deg2670">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+
+                        <div class="circle-logo deg3184">
+                            <a href='https://www.yahoo.com/'>
+                                <div class="icon"><img src='./images/filler.png'></div>
+                                <div class="center-name">Title or Name</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>
